@@ -26,8 +26,8 @@ def word_substituter string
 end
 
 def bulk_tweet_shortener tweets
-  bulked_tweets =array.collect do |element|
+  bulked_tweets = array.collect do |element|
      word_substituter element
-  end.join(" ")
+  end
   puts bulked_tweets
 end
