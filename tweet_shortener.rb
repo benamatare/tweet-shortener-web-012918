@@ -27,7 +27,7 @@ end
 
 def bulk_tweet_shortener array
  array.collect do |element|
-     word_substituter element
+    puts word_substituter element
   end
 end
 
