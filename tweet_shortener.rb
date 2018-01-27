@@ -15,7 +15,7 @@ def dictionary
 end
 
 def word_substituter string
-  holder_array = string.split(" ").downcase
+  holder_array = string.downcase.split(" ")
   holder_array.collect do |word|
     if dictionary.keys.include? word
       word = dictionary[word]
