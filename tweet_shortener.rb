@@ -29,7 +29,7 @@ def bulk_tweet_shortener array
   bulked_tweets = array.collect do |element|
      word_substituter element
   end
-   bulked_tweets
+   puts bulked_tweets
 end
 
 def selective_tweet_shortener string
