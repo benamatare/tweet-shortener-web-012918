@@ -17,10 +17,10 @@ end
 def word_substituter string
   holder_array = string.split(" ")
   holder_array.collect do |word|
-    if dictionary.keys.include? word 
+    if dictionary.keys.include? word
       word = dictionary[word]
     else
-      word 
+      word
     end
   end.join(" ")
 end
