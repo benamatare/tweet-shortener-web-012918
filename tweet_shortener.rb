@@ -33,7 +33,7 @@ def bulk_tweet_shortener array
 end
 
 def selective_tweet_shortener string
-  method = if string.length > 140 
+  method = if string.length > 140
     word_substituter string
   else
     string
@@ -41,9 +41,9 @@ def selective_tweet_shortener string
   method
 end
 
-def shortened_tweet_truncator tweet 
+def shortened_tweet_truncator tweet
   shortened_tweet = word_substituter tweet
-  if shortened_tweet.length > 140 
+  if shortened_tweet.length > 140
   shortened_tweet[0..140] + "..."
 else
   shortened_tweet
