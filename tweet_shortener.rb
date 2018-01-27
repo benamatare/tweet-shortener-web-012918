@@ -34,7 +34,7 @@ end
 
 def selective_tweet_shortener string
   method = if string.length > 140 
-    word_substituter string.join(" ")
+    word_substituter string
   else
     string
   end
