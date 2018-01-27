@@ -33,9 +33,9 @@ def bulk_tweet_shortener array
 end
 
 def selective_tweet_shortener string
-  method = if string.length > 140 
+  method = if string.length > 140
     word_substituter string.join(" ")
-  else 
+  else
     string
   end
   method
