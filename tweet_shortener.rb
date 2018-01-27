@@ -31,3 +31,12 @@ def bulk_tweet_shortener array
   end
   puts bulked_tweets.join(", ")
 end
+
+def selective_tweet_shortener string
+  method = if string.length > 140 
+    word_substituter string.join(" ")
+  else 
+    string
+  end
+  method
+end
